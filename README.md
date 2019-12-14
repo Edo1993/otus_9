@@ -39,3 +39,13 @@ sudo systemctl status docker
 В результате должно появиться подобное сообщение:
 ![Image alt](https://github.com/Edo1993/otus_9/raw/master/11.png)
 
+Dockerfile, html запилили, посмотреть, что локально работает.
+Сборка в текущей директории. 
+```
+docker build -t <имя> .
+```
+Наличие успешно собранного образа:
+```
+docker images | grep '<имя>'
+docker ps -a
+```
