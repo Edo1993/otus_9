@@ -49,3 +49,7 @@ docker build -t <имя> .
 docker images | grep '<имя>'
 docker ps -a
 ```
+Запустить контейнер 
+```
+docker run -d -p 82:80 container_name
+```
