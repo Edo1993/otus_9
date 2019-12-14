@@ -8,6 +8,12 @@ Docker
 
 # кастомный образ nginx на базе alpine
 
+Мой образ на докерхабе
+```
+docker pull edo2681/nginx-alpine
+docker run --name nginx-alpine -dp 82:80 edo2681/nginx-alpine
+```
+
 пишу для себя, потому что потом забуду.
 * установка docker на centos 7
 Обновить локальную базу пакетов:
