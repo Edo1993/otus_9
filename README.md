@@ -50,17 +50,17 @@ Dockerfile, html запилили, посмотреть, что локально
 ```
 docker build -t <имя> .
 ```
-Наличие успешно собранного образа:
-```
-docker images | grep '<имя>'
-docker ps -a
-```
 Запустить контейнер 
 ```
 docker run -d -p 82:80 container_name
 ```
 ![Image alt](https://github.com/Edo1993/otus_9/raw/master/13.png)
 
+Наличие успешно собранного образа:
+```
+docker images | grep '<имя>'
+docker ps -a
+```
 Залезть в контейнер и покопаться внутри 
 ```
 docker exec -it container_name sh
@@ -75,3 +75,5 @@ docker tag YOURIMAGE YOUR_DOCKERHUB_NAME/YOURIMAGE
 ```
 docker push YOUR_DOCKERHUB_NAME/YOURIMAGE
 ```
+# 2 *Определите разницу между контейнером и образом*
+# 3 *Можно ли в контейнере собрать ядро?*
