@@ -31,6 +31,10 @@ sudo systemctl start docker
 sudo systemctl status docker
 ```
 Чтобы проверить, что команды выполняются от имени текущего пользователя - Log out / log back
+```
+docker run hello-world
+```
+![Image alt](https://github.com/Edo1993/otus_9/raw/master/12.png)
 
 В результате должно появиться подобное сообщение:
 ![Image alt](https://github.com/Edo1993/otus_9/raw/master/11.png)
