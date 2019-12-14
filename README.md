@@ -55,3 +55,17 @@ docker run -d -p 82:80 container_name
 ```
 ![Image alt](https://github.com/Edo1993/otus_9/raw/master/13.png)
 
+Залезть в контейнер и покопаться внутри 
+```
+docker exec -it container_name sh
+```
+
+Перед тем как запушить готовый образ, надо сделать:
+```
+docker login
+docker tag YOURIMAGE YOUR_DOCKERHUB_NAME/YOURIMAGE
+```
+потом
+```
+docker push YOUR_DOCKERHUB_NAME/YOURIMAGE
+```
