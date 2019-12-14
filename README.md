@@ -26,16 +26,16 @@ sudo usermod -aG docker $USER
 ```
 sudo systemctl start docker
 ```
-Убедиться в том, что демон стартовал без ошибок и предупреждений:
-```
-sudo systemctl status docker
-```
 Чтобы проверить, что команды выполняются от имени текущего пользователя - Log out / log back
 ```
 docker run hello-world
 ```
 ![Image alt](https://github.com/Edo1993/otus_9/raw/master/12.png)
 
+Убедиться в том, что демон стартовал без ошибок и предупреждений:
+```
+sudo systemctl status docker
+```
 В результате должно появиться подобное сообщение:
 ![Image alt](https://github.com/Edo1993/otus_9/raw/master/11.png)
 
