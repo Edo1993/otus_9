@@ -9,6 +9,7 @@ Docker
 # кастомный образ nginx на базе alpine
 
 Мой образ на докерхабе
+https://hub.docker.com/repository/docker/edo2681/nginx-alpine
 ```
 docker pull edo2681/nginx-alpine
 docker run --name nginx-alpine -dp 82:80 edo2681/nginx-alpine
