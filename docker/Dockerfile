@@ -1,6 +1,10 @@
-FROM nginx:alpine
-MAINTAINER KarinaZ rd4th@mail.com
-RUN apk update && apk upgrade
+FROM alpine:3.2
+RUN apk add --update nginx && rm -rf /var/cache/apk/*
+RUN mkdir -p /tmp/nginx/client-body
+
+COPY nginx/nginx.conf /etc/nginx/nginx.conf
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY index.html /usr/share/nginx/html
 EXPOSE 80
-COPY html /usr/share/nginx/html
-#ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+
+CMD ["nginx", "-g", "daemon off;"]
